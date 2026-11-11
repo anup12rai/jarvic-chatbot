@@ -54,7 +54,7 @@ def chat(request: ChatRequest):
             }
         ]
 
-        # Previous conversation
+       
         for item in request.history[-10:]:
             role = item.get("role")
             content = item.get("content")
@@ -65,7 +65,7 @@ def chat(request: ChatRequest):
                     "content": content[:4000]
                 })
 
-        # Current message
+    
         messages.append({
             "role": "user",
             "content": request.message
