@@ -1,4 +1,5 @@
-fastapi
-uvicorn
 groq
+flask
 python-dotenv
+requests
+gunicorn
